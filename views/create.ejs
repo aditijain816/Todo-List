@@ -1,0 +1,18 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <p> You can add a To-do item </p>
+
+    <div class="create-blog content">
+        <form action = "/todos" method="POST">
+            <label for="item">To-do Item</label>
+            <input type="text" id="item" name= "item" required>         
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <%- include('./partials/nav.ejs') %>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <% if (hellos.length > 0) { %>
+        <% hellos.forEach(hello => { %>
+            <a href="/todos/<%= hello.id %>"> 
+                <%= hello.item %>
+            </a>
+        <% }) %>
+    <% } else { %>
+        <p> There are no blogs to display here </p>
+    <% } %>
+
+    <%- include('./partials/nav.ejs') %>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
